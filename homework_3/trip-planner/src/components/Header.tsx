@@ -36,23 +36,23 @@ export default function Header() {
                     </Link>
                     {
                         continents.map((continent, index) => 
-                        <NavLink 
-                            to={`/continent/${continent}`} 
-                            className={({isActive, isPending}) => {
-                                if(isActive) return "font-bold border-b-2 border-slate-50";
-                                if(isPending) return "text-slate-500";
-                                return "text-slate-50";
-                            }}
-                            key={`${continent}nav`}
-                            >
-                                <li 
-                                    className="w-28 flex justify-center space-x-2 pb-2 cursor-pointer" 
-                                    key={continent}
+                            <NavLink 
+                                to={`/continent/${continent}`} 
+                                className={({isActive, isPending}) => {
+                                    if(isActive) return "font-bold border-b-2 border-slate-50";
+                                    if(isPending) return "text-slate-500";
+                                    return "text-slate-50";
+                                }}
+                                key={`${continent}nav`}
                                 >
-                                    <span>{continentSVGs[index]}</span> 
-                                    <span>{continent}</span>
-                                </li>
-                             </NavLink>
+                                    <li 
+                                        className="w-28 flex justify-center space-x-2 pb-2 cursor-pointer" 
+                                        key={continent}
+                                    >
+                                        <span>{continentSVGs[index]}</span> 
+                                        <span>{continent}</span>
+                                    </li>
+                            </NavLink>
                         )
                     }
                 </ul>
