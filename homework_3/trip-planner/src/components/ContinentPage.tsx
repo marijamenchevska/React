@@ -20,7 +20,7 @@ export default function ContinentPage ({countries}: ContinentPageProps) {
 
     return (
         <>
-            <div className="flex flex-wrap p-5 shadow-md">
+            <div className="flex flex-wrap p-5">
                 {
                     continentCountries.map(country => 
                         <CountryCard key={country.name.common}
