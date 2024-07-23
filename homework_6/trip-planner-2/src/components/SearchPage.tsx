@@ -25,7 +25,7 @@ export default function SearchPage({ searchWord }: SearchPageProps) {
       async () =>
         axios
           .get(
-            `https://restcountries.com/v3.1/name/${searchWord}?fields=name,capital,area,flags,population,landlocked,independent`
+            `https://restcountries.com/v3.1/name/${searchWord.toLowerCase()}?fields=name,capital,area,flags,population,landlocked,independent`
           )
           .then((response) =>
             dispatch(
