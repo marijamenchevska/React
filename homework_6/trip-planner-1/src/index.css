@@ -1,0 +1,22 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:-webkit-autofill {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #f8fafc;
+}
+
+textarea {
+  resize: none;
+}
+
+textarea::-webkit-scrollbar {
+  width: 0 !important;
+}
